@@ -28,7 +28,7 @@ class User(DeclarativeBase):
         index=True,
         doc="user's email"
     )
-    password_hash = Column(
+    password = Column(
         Text,
         nullable=False,
         doc="hashed password"
